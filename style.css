@@ -1,0 +1,94 @@
+*, *:before, *:after {
+     box-sizing: border-box;
+     text-align: center;
+     font-family: 'Roboto Mono', monospace;
+}
+     
+h1 {
+     background-color: black;
+     color: white;
+     border-radius:5px 5px 0px 0px;
+     padding: 10px 30px;
+     margin: 0px 200px;
+     min-width: 320px;
+     max-width: 550px;
+}
+    
+/** Input field styling **/
+input[type=number] {
+     padding:10px;
+     border:0;
+     border-radius:10px;
+     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+     width: 100px;
+}
+     
+input[type=button] {
+     border:none;
+     background-color:#3F51B5;
+     color:#fff;
+     font-size: 1.5em;
+     border-radius:5px;
+     width: 170px;
+     margin: 10px;
+}
+
+input[type=button]:hover {
+     background-color: #25B611;
+}
+
+/** Service Quality range bar styling **/
+input[type=range] {
+     -webkit-appearance: none;
+     height: 15px;
+     background: white;
+     outline: none;
+     opacity: 0.7;
+     -webkit-transition: .2s;
+     transition: opacity .2s;
+}
+     
+input[type=range]:hover {
+     opacity: 1;     
+}
+     
+input[type=range]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 25px;
+     height: 25px;
+     background: #3F51B5;
+     cursor: pointer;
+}
+     
+input[type=range]::-moz-range-thumb {
+     width: 25px;
+     height: 25px;
+     background: #3F51B5;
+     cursor: pointer;
+}
+/** Form Container **/
+.container {
+     border:none;
+     background-color: #B3B3B3;
+     border-radius:0px 0px 5px 5px;
+     padding: 10px 30px;
+     margin: 0px 200px;
+     min-width: 320px;
+     max-width: 550px;
+}
+     
+
+#tipTotal, #perPerson {
+     color: #186F0C;
+     
+}
+
+.bad {
+     color: #FC0107;
+
+}
+
+.great {
+     color: #25B611;
+}

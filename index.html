@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<script src="write.js"></script>
+	<title>Tip Calculator</title>
+	<H1>Tip Calculator</H1>
+</head>
+<body>
+	<form class="container">
+		<p>How much was your bill?</p>
+		<input type="number" id="bill" name="bill" min=".00" step=".01" placeholder="$$$">
+		<p>How was your service?</p>
+		<h3><span class="bad">bad </span><input type="range" id="range" name="range" min=".1" max=".25" step=".01"> <span class="great"> great</span></h3>
+		<p>How many people are splitting the bill?</p>
+		<input type="number" id="people" name="people" placeholder="# of peeps">
+		<br>
+		<input type="button" onclick="calculate();" value="Calculate">
+		<p id="tipTotal"></p>
+		<p id="perPerson"></p>
+	</form>
+</body>
+</html>
